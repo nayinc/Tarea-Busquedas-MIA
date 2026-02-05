@@ -98,6 +98,8 @@ Estrategia: Expandir el nodo con menor valor de evaluación $f(n) = g(n) + h(n)$
     * **(3,1):** $g=7, h=1 \rightarrow \mathbf{f=8}$ (Coste sube por mov. horizontal)
     * **(2,1):** $g=9, h=0 \rightarrow \mathbf{f=9}$ (META)
 
+![Tablero del Ejercicio](tablero2.png)
+
 ``` 
 INICIO (3,4)  [f=4]
   |
