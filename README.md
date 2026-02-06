@@ -83,7 +83,7 @@ Estrategia: Expandir el nodo con menor valor de evaluación $f(n) = g(n) + h(n)$
     * *Decisión:* Es el nodo más prometedor.
 
 3.  **Intento de Expansión (3,3) → Arriba (3,2):**
-    * **¡MURO!** El camino óptimo teórico está bloqueado.
+    * **MURO** El camino óptimo teórico está bloqueado.
     * El algoritmo debe buscar la siguiente mejor opción en la frontera (OPEN list).
 
 4.  **Expansión Alternativa (3,3) → Derecha (4,3):**
@@ -124,6 +124,9 @@ INICIO (3,4)  [f=4]
          V
     ★ META (2,1) ★
 ```
+
+![Diagrama1](diagrama1.drawio.png)
+
 ---
 
 ## Ejercicio 2: Análisis de la Heurística
@@ -133,7 +136,8 @@ INICIO (3,4)  [f=4]
 **Respuesta:** **SÍ, es admisible.**
 
 **Justificación Teórica:**
-Una heurística $h(n)$ es admisible si nunca sobreestima el coste real para alcanzar la meta ($h^*(n)$).
+Una heurística $h(n)$ es admisible si nunca sobreestima el coste real para alcanzar la meta ( $h^*(n)$ ).
+
 $$h(n) \le h^*(n)$$
 
 **Aplicación al problema:**
@@ -226,6 +230,8 @@ El algoritmo mantiene una frontera de nodos ordenados por coste acumulado crecie
                           |
                           +---> [g=456] Burgos (X)
 ```
+
+![Diagrama](diagrama2.drawio.png)
 
 ### Solución Final
 
